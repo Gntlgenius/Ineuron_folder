@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+    <title>REVIEWS HUB</title>
+</head>
+
+<body>
+
+
+
+    <!-- <div class="content">
+        <h1 style="text-align: center">Search</h1>
+    
+        <div class="form">
+            <form action="/" method="POST">
+                <input type="text" name="content" id="content">
+                <input type="submit" value="Search">
+            </form>
+        </div>
+    </div> -->
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <a class="navbar-brand" href="#">GET REVIEWS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    <div class="container mt-4 col-12">
+        <div class="jumbotron bg-dark" style="text-align: center; ">
+            <h1 class="display-4" style="font-weight: bolder; color: white;">TOP 10 REVIEWS HUB</h1>
+            <p class="lead" style="font-family: Arial, Helvetica, sans-serif; color: white;">All reviews in this site
+                are scraped from
+                Flipkart.com using Scrapy and ScrapyRT</p>
+            <hr class="my-4">
+            <p style="color: white;">for more information click on the link below.</p>
+            <a class="btn btn-primary btn-lg" href="https://scrapy.org" role="button" style="color: white;">Learn
+                more</a>
+            <br>
+            <br>
+            <br>
+            <div class="row justify-content-center">
+                <br>
+                <br>
+                <nav class="navbar navbar-light bg-dark col-4 ">
+                    <form class="form-inline justify-content-center" action="/scrap" method="POST">
+                        <input class="form-control mr-sm-2 mb-2" style="width: 500px;" type="text"
+                            placeholder="Search Items" name="content" id="content" aria-label="Search">
+                        <button class="btn btn-outline-black my-2 my-sm-0 bg-primary mt-4" type="submit"
+                            style="width: 150px;" value="Search">Search</button>
+                    </form>
+                </nav>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
